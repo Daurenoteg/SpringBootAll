@@ -1,8 +1,7 @@
-package services.impl;
+package com.example.clubspring.services.impl;
 
-import models.clubDto.ClubDto;
-import models.club.Club;
-import org.springframework.stereotype.Service;
+import com.example.clubspring.models.club.Club;
+import com.example.clubspring.models.clubDto.ClubDto;
 
 import java.util.List;
 

@@ -1,6 +1,6 @@
-package repositories;
+package com.example.clubspring.repositories;
 
-import models.club.Club;
+import com.example.clubspring.models.club.Club;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ClubRepository extends JpaRepository<Club, Long> {

@@ -1,12 +1,11 @@
-package controllers;
+package com.example.clubspring.controllers;
 
-import models.clubDto.ClubDto;
+import com.example.clubspring.models.clubDto.ClubDto;
+import com.example.clubspring.services.impl.ClubService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import services.impl.ClubService;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package models.clubDto;
+package com.example.clubspring.models.clubDto;
 
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;

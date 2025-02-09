@@ -1,10 +1,10 @@
-package services.impl;
+package com.example.clubspring.services.impl;
 
+import com.example.clubspring.models.club.Club;
+import com.example.clubspring.models.clubDto.ClubDto;
+import com.example.clubspring.repositories.ClubRepository;
 import jakarta.persistence.EntityNotFoundException;
-import models.club.Club;
-import models.clubDto.ClubDto;
 import org.springframework.stereotype.Service;
-import repositories.ClubRepository;
 
 import java.util.List;
 import java.util.stream.Collectors;
