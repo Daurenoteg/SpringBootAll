@@ -2,13 +2,17 @@ package com.example.clubspring.models.clubDto;
 
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 
 @Data
 @Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class ClubDto {
     private Long id;
     @NotEmpty(message = "Название клуба не может быть пустым")

@@ -38,12 +38,29 @@ public class ClubServiceImpl implements ClubService{
     }
 
     @Override
+    public void deleteClub(long clubId) {
+        clubRepository.deleteById(clubId);
+    }
+
+    @Override
     public void updateClub(ClubDto clubDto) {
-        Club club = mapToClub(clubDto);
+        Club club = mapDtoToClub(clubDto);
         clubRepository.save(club);
     }
 
-    private Club mapToClub(ClubDto clubDto) {
+    @Override
+    public ClubDto createClub(ClubDto clubDto) {
+        if (clubDto == null) {
+            throw new IllegalArgumentException("ClubDto cannot be null");
+        }
+        Club club = mapDtoToClub(clubDto);
+        Club savedClub = clubRepository.save(club);
+        return mapToClubToDto(savedClub);
+}
+
+
+
+    private Club mapDtoToClub(ClubDto clubDto) {
         return Club.builder()
                 .id(clubDto.getId())
                 .title(clubDto.getTitle())
