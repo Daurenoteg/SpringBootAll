@@ -33,12 +33,6 @@ private ClubController(ClubService clubService){this.clubService = clubService;}
         return ResponseEntity.ok(clubDto);
     }
 
-//    @PostMapping("club/save")
-//    public ResponseEntity<Club> saveClub(@RequestBody Club club) {
-//        Club savedClub = clubService.saveClub(club);
-//        return ResponseEntity.status(HttpStatus.CREATED).body(savedClub);
-//    }
-
     @PostMapping("club/create")
     public ResponseEntity<ClubDto> saveClub(@RequestBody ClubDto clubDto) {
         ClubDto createdClub = clubService.createClub(clubDto);
