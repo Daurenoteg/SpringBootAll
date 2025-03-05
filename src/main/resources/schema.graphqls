@@ -1,0 +1,16 @@
+type Query {
+    users: [User]              # Получить всех пользователей
+    userById(id: ID!): User    # Получить пользователя по ID
+}
+
+type Mutation {
+    createUser(name: String!, email: String!): User  # Создать пользователя
+    updateUser(id: ID!, name: String, email: String): User  # Обновить пользователя
+    deleteUser(id: ID!): Boolean  # Удалить пользователя
+}
+
+type User {
+    id: ID!
+    name: String!
+    email: String!
+}

@@ -66,7 +66,11 @@ class ClubServiceTestMockito {
                 .title("Football Club")
                 .content("Best football club")
                 .build();
-        ClubDto clubDto = ClubDto.builder().id(1L).title("Football Club").content("Best football club").build();
+        ClubDto clubDto = ClubDto.builder()
+                .id(1L)
+                .title("Football Club")
+                .content("Best football club")
+                .build();
 
         when(clubRepository.save(Mockito.any(Club.class))).thenReturn(club);
 

@@ -45,4 +45,7 @@ public class ClubRestController {
     public List<ClubDto> listClubs() {
         return clubService.findAllCubs();
     }
+
+
+    //http://localhost:8090/swagger-ui/index.html
 }

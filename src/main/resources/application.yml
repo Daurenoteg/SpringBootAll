@@ -1,0 +1,19 @@
+  spring:
+    jpa:
+      hibernate:
+        ddl-auto: update
+      show-sql: true
+    graphql:
+      path: /graphql
+      graphiql:
+        enabled: true
+
+
+  springdoc:
+    api-docs:
+      path: /v3/api-docs
+      enabled: true
+    swagger-ui:
+      path: /swagger-ui
+      enabled: true
+
